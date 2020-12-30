@@ -1,4 +1,4 @@
-nama: toc-generate
+name: toc-generate
 
 on: push
 
