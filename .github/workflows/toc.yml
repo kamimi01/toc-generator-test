@@ -12,5 +12,6 @@ jobs:
       - uses: technote-space/toc-generator@v3
         with:
           TOC_TITLE: "**目次**"
+          FOLDING: true
           COMMIT_MESSAGE: "#1 Add: 目次作成"
-          TARGET_PATHS: "*.md,test/*.md"
+          TARGET_PATHS: "*.md,test/*.md,test/test2/*.md"
