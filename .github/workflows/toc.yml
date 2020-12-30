@@ -13,3 +13,4 @@ jobs:
         with:
           TOC_TITLE: "**目次**"
           COMMIT_MESSAGE: "#1 Add: 目次作成"
+          TARGET_PATHS: *.md

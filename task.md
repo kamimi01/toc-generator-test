@@ -1,4 +1,4 @@
-# 大項目
+# タスク
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -18,5 +18,3 @@
 ### 小項目2
 
 ## 中項目2
-
-## 中項目3
