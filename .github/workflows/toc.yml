@@ -1,9 +1,6 @@
 on:
   push:
    - main
-
-name: toc-generate
-
 jobs:
   comment:
     runs-on: ubuntu-latest
