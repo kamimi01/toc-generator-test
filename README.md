@@ -9,7 +9,6 @@
   - [小項目2](#%E5%B0%8F%E9%A0%85%E7%9B%AE2)
 - [中項目2](#%E4%B8%AD%E9%A0%85%E7%9B%AE2)
 - [中項目3](#%E4%B8%AD%E9%A0%85%E7%9B%AE3)
-- [中項目4](#%E4%B8%AD%E9%A0%85%E7%9B%AE4)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
