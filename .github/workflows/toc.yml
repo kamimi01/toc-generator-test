@@ -1,10 +1,12 @@
 name: toc-generate
 
+# developブランチにプッシュされた場合のみ起動
 on: 
   push:
     branches:
       - develop
 
+# with以下でtoc-generatorの設定を指定
 jobs:
   comment:
     runs-on: ubuntu-latest
