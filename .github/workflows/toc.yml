@@ -1,6 +1,7 @@
-on:
-  push:
-   - main
+nama: toc-generate
+
+on: push
+
 jobs:
   comment:
     runs-on: ubuntu-latest
