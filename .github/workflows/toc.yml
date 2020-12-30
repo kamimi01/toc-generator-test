@@ -9,3 +9,4 @@ jobs:
       - uses: technote-space/toc-generator@v3
         with:
           TOC_TITLE: "**目次**"
+          COMMIT_MESSAGE: "#1 Add: 目次作成"
