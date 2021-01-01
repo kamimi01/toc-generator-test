@@ -15,5 +15,6 @@ jobs:
         with:
           FOLDING: true
           TOC_TITLE: "**目次**"
+          COMMIT_MESSAGE: "#1 Add or Update: toc-generatorによる目次自動作成"
           TARGET_PATHS: "**/*.md"
           
