@@ -11,7 +11,7 @@ jobs:
   comment:
     runs-on: ubuntu-latest
     steps:
-      - uses: technote-space/toc-generator@v
+      - uses: technote-space/toc-generator@v3
         with:
           TOC_TITLE: "**目次**"
           FOLDING: true
