@@ -16,4 +16,5 @@ jobs:
           TOC_TITLE: "**目次**"
           FOLDING: true
           COMMIT_MESSAGE: "#1 Add: 目次作成"
-          TARGET_PATHS: "*.md,test/*.md,test/test2/*.md"
+          # TARGET_PATHS: "*.md,test/*.md,test/test2/*.md"
+          TARGET_PATHS: "**/*.md"
