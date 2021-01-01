@@ -1,19 +1,19 @@
-name: toc-generate
+name: toc-generator
 
-# developブランチにプッシュされた場合のみ起動
-on: 
+on:
   push:
     branches:
       - develop
-
-# with以下でtoc-generatorの設定を指定
+  
 jobs:
-  comment:
+  generateTOC:
+    name: TOC Generator
     runs-on: ubuntu-latest
     steps:
-      - uses: technote-space/toc-generator@v3
+      - name: toc-generator
+        uses: technote-space/toc-generator@v3
         with:
-          TOC_TITLE: "**目次**"
           FOLDING: true
-          COMMIT_MESSAGE: "#1 Add: 目次作成"
-          TARGET_PATHS: "*.md,test/*.md,test/test2/*.md"
+          TOC_TITLE: "**目次**"
+          TARGET_PATHS: "**/*.md"
+          
