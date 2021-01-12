@@ -30,4 +30,6 @@ jobs:
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
           name: 'The Result of Github Actions Workflow(kamimi01)'
           channel: '#experimental-station'
+          icon_emoji: ':star:'
+          icon_url: 'https://user-images.githubusercontent.com/47489629/104346721-16e1d200-5543-11eb-869f-80ac22ee4501.png'
           
