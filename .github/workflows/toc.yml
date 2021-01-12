@@ -17,4 +17,16 @@ jobs:
           TOC_TITLE: "**目次**"
           COMMIT_MESSAGE: "Add or Update: toc-generatorによる目次自動作成\n#1"
           TARGET_PATHS: "**/*.md"
+
+  slack-notify:
+    if: always()
+    needs: [generateTOC]
+    name: workflow notification to slack
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Gamesight/slack-workflow-status@master
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          channel: '#experimental-station'
           
