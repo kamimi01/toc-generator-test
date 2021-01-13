@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: toc-generator
-        uses: technote-space/toc-generator@v3
+        uses: technote-space/toc-generator@v
         with:
           FOLDING: true
           TOC_TITLE: "**目次**"
-          COMMIT_MESSAGE: "Add or Update: toc-generatorによる目次自動作成\n#1
+          COMMIT_MESSAGE: "Add or Update: toc-generatorによる目次自動作成\n#1"
           TARGET_PATHS: "**/*.md"
 
   slack-notify:
