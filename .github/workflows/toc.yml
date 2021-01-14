@@ -10,13 +10,16 @@ jobs:
     name: TOC Generator
     runs-on: ubuntu-latest
     steps:
+      - uses: technote-space/load-config-action@v1
+        with:
+          CONFIG_FILENAME: workflow-settings.json
       - name: toc-generator
         uses: technote-space/toc-generator@v3
         with:
-          FOLDING: true
-          TOC_TITLE: "**目次**"
-          COMMIT_MESSAGE: "Add or Update: toc-generatorによる目次自動作成\n#1"
-          TARGET_PATHS: "**/*.md"
+          FOLDING: ${{ env.TOC.FOLDING}}
+          TOC_TITLE: ${{ env.TOC.TITLE }}
+          TARGET_PATHS: ${{ env.TOC.TARGET_PATHS }}
+          COMMIT_MESSAGE: ${{ env.TOC.COMMIT_MESSAGE }}
 
   slack-notify:
     if: always()
@@ -24,6 +27,9 @@ jobs:
     name: workflow notification to slack
     runs-on: ubuntu-latest
     steps:
+      - uses: technote-space/load-config-action@v1
+        with:
+          CONFIG_FILENAME: workflow-settings.json
       - uses: Gamesight/slack-workflow-status@master
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
