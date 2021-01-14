@@ -3,7 +3,7 @@ name: toc-generator
 on:
   push:
     branches:
-      - ${{ env.WORKFLOW_ACTIVE_BRANCH }}
+      - develop
   
 jobs:
   generateTOC:
