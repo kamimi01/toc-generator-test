@@ -16,10 +16,10 @@ jobs:
       - name: toc-generator
         uses: technote-space/toc-generator@v3
         with:
-          FOLDING: ${{ env.TOC.FOLDING}}
-          TOC_TITLE: ${{ env.TOC.TITLE }}
-          TARGET_PATHS: ${{ env.TOC.TARGET_PATHS }}
-          COMMIT_MESSAGE: ${{ env.TOC.COMMIT_MESSAGE }}
+          FOLDING: ${{ env.TOC_FOLDING}}
+          TOC_TITLE: ${{ env.TOC_TITLE }}
+          TARGET_PATHS: ${{ env.TOC_TARGET_PATHS }}
+          COMMIT_MESSAGE: ${{ env.TOC_COMMIT_MESSAGE }}
 
   slack-notify:
     if: always()
@@ -34,7 +34,7 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          name: 'Github Actions Workflow'
-          channel: '#random'
-          icon_url: 'https://user-images.githubusercontent.com/47489629/104346721-16e1d200-5543-11eb-869f-80ac22ee4501.png'
+          name: ${{ env.WORKFLOW_NOTIFICATION_BOT_NAME }}
+          channel: ${{ env.WORKFLOW_NOTIFICATION_CHANNEL_NAME }}
+          icon_url: ${{ env.WORKFLOW_NOTIFICATION_ICON_URL }}
           
