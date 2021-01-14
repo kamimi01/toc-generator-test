@@ -1,7 +1,9 @@
 {
   "WORKFLOW_ACTIVE_BRANCH": "develop",
-  "TOC_FOLDING": "1",
-  "TOC_TITLE": "**Details**",
-  "TOC_TARGET_PATHS": "**/*.md",
-  "TOC_COMMIT_MESSAGE": "Add or Update: toc-generatorによる目次自動作成\n#1"
+  "TOC":{
+    "FOLDING": "1",
+    "TITLE": "**Details**",
+    "TARGET_PATHS": "**/*.md",
+    "COMMIT_MESSAGE": "Add or Update: toc-generatorによる目次自動作成\n#1"
+  }
 }
