@@ -16,10 +16,10 @@ jobs:
       - name: toc-generator
         uses: technote-space/toc-generator@v3
         with:
-          FOLDING: ${{ env.TOC.FOLDING}}
-          TOC_TITLE: ${{ env.TOC.TITLE }}
-          TARGET_PATHS: ${{ env.TOC.TARGET_PATHS }}
-          COMMIT_MESSAGE: ${{ env.TOC.COMMIT_MESSAGE }}
+          FOLDING: ${{ env.TOC_FOLDING}}
+          TOC_TITLE: ${{ env.TOC_TITLE }}
+          TARGET_PATHS: ${{ env.TOC_TARGET_PATHS }}
+          COMMIT_MESSAGE: ${{ env.TOC_COMMIT_MESSAGE }}
 
   slack-notify:
     if: always()
